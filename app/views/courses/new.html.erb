@@ -1,10 +1,6 @@
 <%= form_for @course, url: {action: "create"} do |f| %>
-  <% if params[:id] %>
-    <%= Subject.find(params[:id]).name %>
-  <% else %>
-    <%= f.label :subject %>
-    <%= f.text_field :subject %>
-  <% end %>
+  <%= f.label :subject %>
+  <%= f.text_field :subject %>
   <%= f.label :number %>
   <%= f.text_field :number %>
   <%= f.label :description %>

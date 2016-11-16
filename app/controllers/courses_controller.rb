@@ -5,12 +5,6 @@ class CoursesController < ApplicationController
 
     def new
       @course = Course.new
-      #@subject = Subject.find(params[:id])
-    end
-
-    def add
-      @course = Course.new
-      @subject = Subject.find(params[:id])
     end
 
     def create
