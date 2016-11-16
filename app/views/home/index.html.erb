@@ -1,1 +1,8 @@
 <h3>MicroTutoring</h3>
+
+<p>Subjects: <% @subjects.each do |s| %>
+    <li>
+        Name: <%= s.name %>
+    </li>
+    <% end %>
+</p>

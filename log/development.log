@@ -27,3 +27,7 @@ Migrating to AddNumberToCourse (20161116204911)
   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161116204911"]]
   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects" ORDER BY "subjects"."id" ASC LIMIT 1[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects" ORDER BY "subjects"."id" ASC LIMIT 1
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects" ORDER BY "subjects"."id" ASC LIMIT 1[0m
+  [1m[35mSubject Load (0.6ms)[0m  SELECT "subjects".* FROM "subjects"
