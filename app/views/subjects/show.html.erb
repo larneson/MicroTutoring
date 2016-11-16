@@ -1,0 +1,11 @@
+<h3>Subject</h3>
+
+<p>Name: <%= @subject.name if @subject.name %></p>
+
+<p>Courses: <% @subject.courses.each do |c| %>
+    <li>
+        Number: <%= c.number %>
+        Description: <%= c.description %>
+    </li>
+    <% end %>
+</p>
