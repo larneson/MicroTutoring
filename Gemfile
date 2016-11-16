@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rename' #for when we want to rename our app inevitably
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 

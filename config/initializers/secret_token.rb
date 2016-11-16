@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Amerexit::Application.config.secret_key_base = 'c81237ea0d82b8567852c6897594806f421c5c167b23266d6e6006757e8dce83fa8c98c8c8ad95931441e66670f19747f462e91727300254ed840dd188067a3f'
+MicroTutoring::Application.config.secret_key_base = 'c81237ea0d82b8567852c6897594806f421c5c167b23266d6e6006757e8dce83fa8c98c8c8ad95931441e66670f19747f462e91727300254ed840dd188067a3f'

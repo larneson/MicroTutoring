@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Amerexit::Application.load_tasks
+MicroTutoring::Application.load_tasks
