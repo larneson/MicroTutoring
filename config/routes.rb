@@ -3,9 +3,10 @@ MicroTutoring::Application.routes.draw do
     get 'subjects/new', to: 'subjects#new'
     post 'subjects/new', to: 'subjects#create'
     get 'subjects/:id', to: 'subjects#show', as: "subjects_show"
-    get 'subjects/:id/add', to: 'courses#add'
+    get 'subjects/:id/add', to: 'courses#new'
     get 'courses/new', to: 'courses#new'
     post 'courses/new', to: 'courses#create'
+    get 'courses/:id', to: 'courses#show', as: "courses_show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

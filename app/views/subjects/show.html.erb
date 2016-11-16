@@ -6,6 +6,7 @@
     <li>
         Number: <%= c.number %>
         Description: <%= c.description %>
+        <%= button_to "View Course", courses_show_path(params[:id]), :method => :get %>
     </li>
     <% end %>
 </p>
