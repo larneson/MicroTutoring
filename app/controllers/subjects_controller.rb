@@ -9,10 +9,10 @@ class SubjectsController < ApplicationController
     end
 
     def create
-      #if @subject.valid?
+      if @subject.valid?
         @subject = Subject.new(:name => params[:subject][:name])
         @subject.save
         redirect_to root_path
-      #end
+      end
     end
 end
