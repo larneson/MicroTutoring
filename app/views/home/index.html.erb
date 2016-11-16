@@ -2,8 +2,8 @@
 
 <p>Subjects: <% @subjects.each do |s| %>
     <li>
-        Name: <%= s.name %>
+        Name: <%= s.name %><%= button_to "View Course", subjects_show_path(id: s.id), :method => :get %>
     </li>
     <% end %>
 </p>
-<%= button_to "Add Subject", subjects_new_path, :class => "button medium", :method => :get %>
+<%= button_to "Add Subject", subjects_new_path, :method => :get %>

@@ -9,10 +9,13 @@ class SubjectsController < ApplicationController
     end
 
     def create
-      if @subject.valid?
-        @subject = Subject.new(:name => params[:subject][:name])
-        @subject.save
+        subject = Subject.new(:name => params[:subject][:name])
+      if subject.valid?
+        subject.save
         redirect_to root_path
+      else
+        #flash isn't working rn but at least it doesn't error
+        redirect_to root_path, :flash => { :error => "Subject already exists" }
       end
     end
 end
