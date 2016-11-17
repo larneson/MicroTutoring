@@ -2,3 +2,10 @@
 
 <p>Number: <%= @course.number if @course.number %></p>
 <p>Description: <%= @course.description if @course.description %></p>
+
+<p>Posts: <% @course.posts.each do |post| %></p>
+    <p><b> <%= post.title %> <b></p>
+    <p> <%= post.description %> </p>
+    <% end %>
+
+<%= button_to "Delete Course", courses_delete_path(@course), :method => :delete %>

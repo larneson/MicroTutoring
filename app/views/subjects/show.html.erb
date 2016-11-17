@@ -1,12 +1,12 @@
 <h3>Subject</h3>
 
-<p>Name: <%= @subject.name if @subject.name %></p>
+<p>Name: <%= @subject.name %></p>
 
 <p>Courses: <% @subject.courses.each do |c| %>
     <li>
         Number: <%= c.number %>
         Description: <%= c.description %>
-        <%= button_to "View Course", courses_show_path(params[:id]), :method => :get %>
+        <%= button_to "View Course", courses_show_path(c.id), :method => :get %>
     </li>
     <% end %>
 </p>

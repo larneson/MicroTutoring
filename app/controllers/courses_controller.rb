@@ -25,4 +25,11 @@ class CoursesController < ApplicationController
         end
 
     end
+
+    def delete
+      course = Course.find(params[:id])
+      course.destroy
+      #TODO: also destroy all posts!
+      redirect_to root_path
+    end
 end
