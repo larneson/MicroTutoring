@@ -6,7 +6,6 @@
     <li>
         Number: <%= c.number %>
         Description: <%= c.description %>
-        <%= button_to "Edit", courses_edit_path(c.id), :method => :get %>
         <%= button_to "View Course", courses_show_path(c.id), :method => :get %>
     </li>
     <% end %>
