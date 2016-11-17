@@ -5050,3 +5050,251 @@ Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2016-11-16 16:09:06 -0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-16 16:09:06 -0800
+
+
+Started GET "/subjects/1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."subject_id" = ?[0m  [["subject_id", 1]]
+  Rendered subjects/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/post.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/post.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:00 -0800
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/post.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/post.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:02 -0800
+
+
+Started POST "/courses/new" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+Processing by CoursesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2u3FEDdknU2WmqDS4gkFk0BRhW/lrW+kTslSdxxgEZQ=", "course"=>{"subject"=>"Math", "number"=>"1A", "description"=>"Calculus"}, "commit"=>"Create Course"}
+  [1m[35mSubject Load (0.3ms)[0m  SELECT "subjects".* FROM "subjects" WHERE "subjects"."name" = 'Math' LIMIT 1
+  [1m[36mCourse Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "courses" WHERE "courses"."number" = '1A' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "courses" WHERE "courses"."number" = '1A' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "description", "number", "subject_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 17 Nov 2016 00:13:26 UTC +00:00], ["description", "Calculus"], ["number", "1A"], ["subject_id", 1], ["updated_at", Thu, 17 Nov 2016 00:13:26 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+Processing by HomeController#index as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/post.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/post.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:26 -0800
+
+
+Started GET "/subjects/1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."subject_id" = ?  [["subject_id", 1]]
+  Rendered subjects/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/post.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/post.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:28 -0800
+
+
+Started GET "/courses/3" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."course_id" = ?  [["course_id", 3]]
+  Rendered courses/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/post.css?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/post.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-16 16:13:32 -0800

@@ -32,4 +32,9 @@ class CoursesController < ApplicationController
       #TODO: also destroy all posts!
       redirect_to root_path
     end
+
+    def edit
+      course = Course.find(params[:id])
+      #TODO: method for updating, might need to add params method to make easier
+    end
 end
