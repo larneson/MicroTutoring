@@ -1,4 +1,5 @@
 MicroTutoring::Application.routes.draw do
+  devise_for :users
     root to: 'home#index'
     get 'subjects/new', to: 'subjects#new'
     post 'subjects/new', to: 'subjects#create'
