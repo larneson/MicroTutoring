@@ -10,6 +10,10 @@ MicroTutoring::Application.routes.draw do
     get 'courses/:id', to: 'courses#show', as: "courses_show"
     delete 'courses/:id', to: 'courses#delete', as: 'courses_delete'
     get 'courses/:id/edit', to: 'courses#edit'
+    get 'users/:id' => 'users#show'
+  # resources :users, :only => [:show]
+  resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
