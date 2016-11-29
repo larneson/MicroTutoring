@@ -1,6 +1,8 @@
 Title:​ MicroTutoring
+
 Team Members:​ Ameena Golding, Gustavo De Leon, Link Arneson, Nithi Narayanan
-Demo Link:​ railsdecal.com
+
+Demo Link:​ (TBA)
 
 
 Idea: An application where people can post bounties in exchange for tutoring sessions on different concepts. Layout of the website would be a tree like structure, going from home to a subject to a course to a post, where the post would include the topic, a short description of the problem they want help with, the times they are available to meet, how much they’re willing to pay, contact email, and venmo user name.
