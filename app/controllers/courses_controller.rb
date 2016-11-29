@@ -28,7 +28,7 @@ class CoursesController < ApplicationController
 
     def delete
         course = Course.find(params[:id])
-        subject = Subject.find_by(id: course.course_id)
+        subject = Subject.find_by(id: course.subject_id)
         course.destroy
         redirect_to subjects_show_path(subject.id)
     end
