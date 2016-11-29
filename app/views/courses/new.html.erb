@@ -1,9 +1,9 @@
 <%= form_for @course, url: {action: "create"} do |f| %>
   <%= f.label :subject %>
-  <%= f.text_field :subject %>
+  <%= f.text_field :subject %> </br>
   <%= f.label :number %>
-  <%= f.text_field :number %>
+  <%= f.text_field :number %> </br>
   <%= f.label :description %>
-  <%= f.text_field :description %>
+  <%= f.text_field :description %> </br>
   <%= f.submit %>
 <% end %>
