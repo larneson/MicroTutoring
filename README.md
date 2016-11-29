@@ -1,6 +1,6 @@
-Title:​ MicroTutoring
+#Title:​ MicroTutoring
 
-Team Members:​ Ameena Golding, Gustavo De Leon, Link Arneson, Nithi Narayanan
+#Team Members:​ Ameena Golding, Gustavo De Leon, Link Arneson, Nithi Narayanan
 
 Demo Link:​ (TBA)
 
