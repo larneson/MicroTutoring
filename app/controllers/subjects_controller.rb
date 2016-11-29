@@ -18,4 +18,11 @@ class SubjectsController < ApplicationController
         redirect_to root_path, :flash => { :error => "Subject already exists" }
       end
     end
+
+    def delete
+      subject = Subject.find(params[:id])
+      subject.destroy
+      #TODO: also destroy all posts!
+      redirect_to root_path
+    end
 end

@@ -16,6 +16,7 @@ MicroTutoring::Application.routes.draw do
     get 'posts/new', to: 'posts#new'
     post 'posts/new', to: 'posts#create'
     delete 'posts/:id', to: 'posts#delete', as: 'posts_delete'
+    delete 'subjects/:id', to: 'subjects#delete', as: 'subjects_delete'
   # resources :users, :only => [:show]
   resources :users
 

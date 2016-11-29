@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161129043527) do
+ActiveRecord::Schema.define(version: 20161129051954) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 20161129043527) do
     t.date     "birthday"
     t.text     "fav_subjects"
     t.boolean  "admin",                  default: false
+    t.text     "venmo"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

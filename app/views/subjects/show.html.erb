@@ -11,3 +11,6 @@
     <% end %>
 </p>
 <%= button_to "Add Course", courses_new_path, :method => :get %>
+<% if current_user.admin %>
+    <%= button_to "Delete Subject", subjects_delete_path(@subject), :method => :delete %>
+<% end %>
