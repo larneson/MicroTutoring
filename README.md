@@ -7,30 +7,30 @@ Idea: An application where people can post bounties in exchange for tutoring ses
 
 
 Models and Description:
-Subject
- - Name: CS
- - Has many courses: 198, 61A, 186
-Course
- - Number: 61A
- - Description: The Structure and Interpretation of Computer Programs
- - Belongs to a Subject: CS
-Post
- - Belongs to a User: gdeleon
- - Belongs to a Course: 61A
- - Title: What are vectors?
- - Description: I am very confused about vectors, really just not following and need someone to walk me through it, shouldn’t take more than an hour. Am available after 6 MWF, and after 5 TTh!
- - Bounty: $15
- - Displays creator email: gdeleon@berkeley.edu
-User
- - First name: Gustavo
- - Last name: De Leon
- - Username: gdeleon
- - Email: gdeleon@berkeley.edu
- - About Me: EECS 2nd Year
- - Tutoring Subjects: CS 61A, CS 61B, Math 1A
- - Admin: False
-Admin User
- - Just for the admin dashboard (did not end up fully using for the MVP)
+ - Subject
+   - Name: CS
+   - Has many courses: 198, 61A, 186
+ - Course
+   - Number: 61A
+   - Description: The Structure and Interpretation of Computer Programs
+   - Belongs to a Subject: CS
+ - Post
+   - Belongs to a User: gdeleon
+   - Belongs to a Course: 61A
+   - Title: What are vectors?
+   - Description: I am very confused about vectors, really just not following and need someone to walk me through it, shouldn’t take more than an hour. Am available after 6 MWF, and after 5 TTh!
+   - Bounty: $15
+   - Displays creator email: gdeleon@berkeley.edu
+ - User
+   - First name: Gustavo
+   - Last name: De Leon
+   - Username: gdeleon
+   - Email: gdeleon@berkeley.edu
+   - About Me: EECS 2nd Year
+   - Tutoring Subjects: CS 61A, CS 61B, Math 1A
+   - Admin: False
+ - Admin User
+   - Just for the admin dashboard (did not end up fully using for the MVP)
 
 
 Features:
