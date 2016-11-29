@@ -4,9 +4,17 @@
 <p>Description: <%= @course.description if @course.description %></p>
 
 <p>Posts: <% @course.posts.each do |post| %></p>
-    <p><b> <%= post.title %> <b></p>
-    <p> <%= post.description %> </p>
+    <div style="border: 1px solid black;">
+    <b> <%= post.title %> </b>
+    </br><%= post.description %>
+</br>$<%= post.bounty %>
+    </br> Contact: <%= post.user_email %>
+    <% if current_user.admin || current_user.id == post.user_id%>
+        <%= button_to "Delete Post", posts_delete_path(post), :method => :delete %>
     <% end %>
+    </div>
+<% end %>
+<%= button_to "Make Post", posts_new_path, :method => :get %>
 <% if current_user.admin %>
     <%= button_to "Delete Course", courses_delete_path(@course), :method => :delete %>
 <% end %>
