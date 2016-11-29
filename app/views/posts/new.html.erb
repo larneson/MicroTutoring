@@ -1,0 +1,13 @@
+<%= form_for :post, url: {action: "create"} do |f| %>
+    <%= f.label :subject %>
+    <%= f.text_field :subject %> </br>
+    <%= f.label :course %>
+    <%= f.text_field :course %> </br>
+  <%= f.label :title %>
+  <%= f.text_field :title %> </br>
+  <%= f.label :description %>
+  <%= f.text_field :description %> </br>
+  <%= f.label :bounty %>
+  <%= f.text_field :bounty %></br>
+  <%= f.submit %>
+<% end %>
