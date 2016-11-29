@@ -7,5 +7,6 @@
     <p><b> <%= post.title %> <b></p>
     <p> <%= post.description %> </p>
     <% end %>
-
-<%= button_to "Delete Course", courses_delete_path(@course), :method => :delete %>
+<% if current_user.admin %>
+    <%= button_to "Delete Course", courses_delete_path(@course), :method => :delete %>
+<% end %>
