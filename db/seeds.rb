@@ -60,3 +60,17 @@ Course.create!(number: "R1B: American History",
                subject_id: Subject.find_by(name: "English").id,
                description: "An introductory literature class that broadly surveys the history of the United States."
 )
+
+Post.create!(title: "Pls help with HW10 :(",
+             description: "I can't figure out part 2 of question 5. I thought that you had to multiply the outgoing weights by 1-p if the probability that any given neuron gets dropped is p, but apparently that's wrong? Please help! I'm free to meet up anytime after 5pm on Tuesday and Thursday.",
+             bounty: 20.0,
+             course_id: Course.find_by(number: "188").id,
+             user_id: User.find_by(first_name: "Jack").id,
+             user_email: User.find_by(first_name: "Jack").email)
+
+Post.create!(title: "Quick Question about Write-Through vs Write-Back Caches",
+             description: "I'm just generally confused on what these terms mean and how they differ from each other? Would like to meet up anytime tomorrow if possible!",
+             bounty: 10.0,
+             course_id: Course.find_by(number: "61C").id,
+             user_id: User.find_by(first_name: "Alicia").id,
+             user_email: User.find_by(first_name: "Alicia").email)
