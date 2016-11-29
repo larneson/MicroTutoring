@@ -16,7 +16,8 @@ User.create!(email: 'bob@gmail.com',
              username: 'bobbucket',
              about: 'A philosopher at heart, with a penchant for quantum mechanics.',
              fav_subjects: 'Philosophy, Physics, Math', password: 'password',
-             password_confirmation: 'password')
+             password_confirmation: 'password',
+             admin: 'true')
 
 
 User.create!(email: 'alicia@gmail.com',
